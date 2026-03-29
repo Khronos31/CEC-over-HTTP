@@ -24,7 +24,7 @@ Raspberry PiのハードウェアCEC機能を、シンプルで遅延ゼロのHT
 
 - **Hardware:** Raspberry Pi (Zero, 3, 4, 5 等) ※HDMI端子がテレビやAVアンプに接続されていること
 - **OS:** Raspberry Pi OS (Debianベース)
-- **Software:** Python 3.x, `libcec`, `aiohttp`
+- **Software:** Python 3.x, `cec-utils` (libcec), `aiohttp`
 
 ---
 
@@ -35,9 +35,9 @@ Raspberry Pi上で、CECを制御するためのライブラリとPythonの非�
 
 ```bash
 sudo apt update
-sudo apt install cec-utils python3-cec python3-aiohttp
+sudo apt install cec-utils python3-aiohttp
 ```
-*(※ `python3-cec` をaptでインストールすることで、面倒なC++ライブラリのビルドを回避できます)*
+*(※ `cec-utils` をインストールすることで、標準的な `cec-client` コマンドを使用して制御します)*
 
 ### 2. スクリプトの配置
 このリポジトリをクローンし、ディレクトリに移動します。

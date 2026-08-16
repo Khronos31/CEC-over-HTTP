@@ -7,7 +7,8 @@ and is kept only so that existing links and clones still lead somewhere.
 It was a small daemon that exposed a Raspberry Pi's CEC adapter over HTTP, meant
 to be called from Home Assistant with `rest_command`. Its companion,
 [cec-bridge](https://github.com/Khronos31/cec-bridge), did the same job as a
-Home Assistant add-on. Neither was ever put into service.
+Home Assistant add-on. Both saw brief experimental use; neither reached daily
+service.
 
 The successor folds both into one Home Assistant integration with a UI config
 flow, and keeps an HTTP daemon as one of two interchangeable transports — for
